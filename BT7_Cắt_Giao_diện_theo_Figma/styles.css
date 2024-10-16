@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    background-color: rgb(28, 16, 63);
+    width: 800px;
+    height: 500px;
+}
+
+.red-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 500px;
+}
+
+.center-image {
+    position: absolute;
+    width: 800px;
+    height: 150px;
+    margin-top: 175px;
+}
+
+.shoes-image {
+    position: absolute;
+    width: 450px;
+    right: 65px;
+    margin-top: 25px;
+}
+
+.watch-image {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+}
+  
+.menu-contain-left {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-btn-left {
+    background-color: transparent;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-list-left {
+    position:absolute;
+    display: none;
+    margin-left: 10px;
+    padding-left: 5px;
+    list-style-type: none;
+    background-color: transparent;
+}
+
+.menu-list-left li a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.menu-list-left li a:hover {
+    display: block;
+    color:brown;
+}
+
+.menu-list-left.show {
+    display: block;
+}
+
+.menu-contain-right {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.menu-btn-right {
+    background-color: transparent;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: right;
+}
+
+.menu-list-right {
+    position:absolute;
+    display: none;
+    /* margin-right: 10px; */
+    /* padding-right: 20px; */
+    list-style-type: none;
+    background-color: transparent;
+    text-align: right;
+}
+
+.menu-list-right li a {
+    text-decoration: none;
+    /* padding-right: 30px; */
+    color: white;
+}
+
+.menu-list-right li a:hover {
+    display: block;
+    color:brown;
+}
+
+.menu-list-right.show {
+    display: block;
+}
+
+.social-contain {
+    position: absolute;
+    display: inline-block;
+    bottom: 8px;
+    left:16px;
+}
+
+.social {
+    display:flex;
+}
+
+.social li {
+    list-style: none;
+    margin-right: 5px;
+    /* width: 10px; */
+}
+
+.social li img {
+    width: 20px;
+    border: none;
+    background: transparent;
+}
+
+.text-contain {
+    position: absolute;
+    bottom: 130px;
+    left: 70px;
+    font-size: small;
+    color: white;
+}
+
+.text-contain p,h2 {
+    margin-bottom: 5px;
+}
+
+.text-contain .content {
+    width: 200px;
+    height: 90px;
+}
+
+.text-contain button {
+    background-color: brown;
+    border: none;
+    border-radius: 15px;
+    width: 90px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.text-contain button p {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.menu-btn-right p {
+    right: 0;
+}

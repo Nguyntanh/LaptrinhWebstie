@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="/submit">
+            <p>Name: <input type="text" name="username" placeholder="Enter your name"></p>
+    
+            <p>Sex:
+                <input type="radio" name="sex" value="male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="sex" value="female" id="female">
+                <label for="female">Female</label>
+            </p>
+    
+            <p>Country:
+                <select name="country" id="country">
+                    <option value="vietnam">Vietnam</option>
+                    <option value="china">China</option>
+                    <option value="uk">UK</option>
+                </select>
+            </p>
+    
+            <p>Message:</p>
+            <textarea name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+    
+            <p>
+                <input type="checkbox" name="subscribe" value="subscribe" id="subscribe">
+                <label for="subscribe">Subscribe?</label>
+            </p>
+    
+            <p>
+                <input type="submit" name="submit" value="Submit">
+            </p>
+        </form>
+    </body>
+</html>

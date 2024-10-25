@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    position: relative;
+    width: 1520px;
+    height: 900px;
+    margin: 0 auto;
+    /* background-color: rgb(188, 233, 146); */
+}
+
+#header {
+    position: absolute;
+    height: 80px;
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    padding-left: 150px;
+    background-color: #fff;
+    border-bottom: 1px solid #efefef;
+}
+
+#header img {
+    height: 40px;
+    margin-top: 20px;
+    background-color: #f6f5f5;
+    border-radius: 20px;
+}
+
+#header h1 {
+    margin-top: 20px;
+}
+
+#header p {
+    background-color: rgb(232, 247, 232);
+    color: #000;
+    padding: 3px 5px;
+    margin-top: 30px;
+    border-radius: 10px;
+    height: fit-content;
+    display: inline-block;
+}
+
+#content {
+    position: absolute;
+    z-index: 2;
+    width: 1520px;
+    height: 900px;
+}
+
+#left-1 {
+    position: absolute;
+    height: 100px;
+    width: 485px;
+    bottom: 340px;
+    left: 0;
+}
+
+#left-2 {
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    bottom: 266px;
+    left: 0;
+}
+
+#right-1 {
+    position: absolute;
+    height: 100px;
+    width: 525px;
+    top: 320px;
+    right: 0;
+}
+
+#right-2 {
+    position: absolute;
+    height: 100px;
+    width: 620px;
+    top: 380px;
+    right: 0;
+}
+
+#frm {
+    position: absolute;
+    z-index: 5;
+    top: 250px;
+    left: 485px;
+    /* background-color: #d38b8b; */
+    height: 550px;
+    width: 550px;
+    box-shadow: 0 0 10px #ccc;
+    opacity: 0.7;
+}
+
+#hd-frm {
+    height: 60px;
+    width: 510px;
+    background-color: #fff;
+    display: flex;
+    margin: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+#box1, #box3, #box5, #box7{
+    background-color: #ccc;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box2, #box4, #box6{
+    background: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 9px;
+    width: 85px;
+    margin: 23px 10px;
+}
+
+#box1 {
+    background-color: rgb(24, 24, 144);
+    color: #fff;
+}
+
+#box2 #data {
+    height: 9px;
+    width: 50px;
+    background-color: rgb(24, 24, 144);
+    border-radius: 25px;
+}
+
+#cnt-frm {
+    height: 400px;
+    width: 550px;
+    /* background-color: aqua; */
+}
+
+#cnt-frm button {
+    width: 520px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    background-color: rgb(24, 24, 144);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#business {
+    width: 380px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+label {
+    font-weight: bold;
+    color: #000;
+}

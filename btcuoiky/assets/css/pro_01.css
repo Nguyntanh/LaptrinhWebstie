@@ -57,13 +57,11 @@ a {
     gap: 0px;
     background-color: #A10550; 
     border-radius: 100%;
-    backdrop-.filter:  {
-    
-    }
-     blur(250px);
+    backdrop-filter: blur(250px); /* Sử dụng đúng thuộc tính backdrop-filter */
     box-shadow: 0 0 114px 114px #A10550; 
     opacity: 0.2;
     z-index: 0;
+     
 }
 
 .navbar {
@@ -294,9 +292,7 @@ a {
     
 }
 
-.text_.filter  {
-
-}
+.text_filter  
 {
     width: 64px;
     height: 34px;
@@ -381,7 +377,7 @@ a {
     gap: 0px;
     opacity: 0px;
     z-index: 1;
-    background: #A10550;
+    background: #ccc;
     transition: background-color 0.3s ease-in-out;
 
 }
@@ -413,14 +409,15 @@ a {
     font-size: 16px;
     font-weight: 700;
     line-height: 22.4px;
-    color: #A10550;
+    color: #0C0C0C;
+    transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
 .arrow_5796 {
     width: 24px;
     height: 24px;
     padding: 0px 7px 0px 7px;
-    cursor: pointer;  /* Để dễ dàng nhận diện mũi tên */
+    cursor: pointer;
 }
 
 .vector_5796 {
@@ -435,6 +432,10 @@ a {
 .arrow_5796.open .vector_5796 {
     transform: rotate(180deg);
     border-top: 5px solid #A10550;
+}
+
+.arrow_5796.open + .text_5796 {
+    color: #A10550;
 }
 
 .frame_26085806 {
@@ -465,7 +466,7 @@ a {
 
 .arrow_5796:not(.open) + .frame_26085806 {
     display: none;
-    height: 56px;  /* Khi không mở frame, chiều cao bằng với filter2 */
+    height: 56px;
 }
 
 .filter2 {
@@ -1811,7 +1812,7 @@ a {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #FFFFFF;
-    z-index: 5;
+    z-index: 4;
         
 }
 
@@ -1872,7 +1873,7 @@ a {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #0C0C0C;
-    z-index: 5;
+    z-index: 4;
         
 }
 
@@ -1884,7 +1885,7 @@ a {
     left: 204px;
     gap: 0px;
     opacity: 0px;
-    z-index: 5;
+    z-index: 4;
     
 }
 
@@ -1895,10 +1896,7 @@ a {
     gap: 0px;
     opacity: 0px;
     background: #3D021E33;
-    backdrop-.filter:  {
-    
-    }
-     blur(8px);
+    backdrop-filter: blur(8px); 
     z-index: 3;
     
 }
@@ -1909,11 +1907,8 @@ a {
     gap: 0px;
     opacity: 0px;
     background: #3D021E33;
-    backdrop-.filter:  {
-    
-    }
-     blur(8px);
-    
+    backdrop-filter: blur(8px); 
+
 }
 
 .ellipse16 {
@@ -1925,10 +1920,8 @@ a {
     gap: 0px;
     opacity: 0px;
     background: #3D021E33;
-    backdrop-.filter:  {
-    
-    }
-     blur(8px);
+    backdrop-filter: blur(8px); 
+
     z-index: 4;
     
 }

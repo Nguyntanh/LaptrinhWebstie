@@ -163,7 +163,6 @@
                 <div class="text_expert">1-2-1 expert advice</div>
                 <div class="text2">take some time to feel uplifted with <br> a complimentary, bespoke beauty <br> service. our team of experts are here <br> to help in person.</div>
                 <img src="assets/img/image 85.png" alt="im85" class="image85">
-                <!-- <div class="ellipse8"></div> -->
             </div>
         </div>
         <div class="frame_26085891">
@@ -293,15 +292,12 @@
             const rectang8 = document.querySelector('.rectang8');
             const track = document.querySelector('.track');
             
-            // Kiểm tra trạng thái hiện tại của switch
             if (rectang8.style.left === '28px') {
-                // Nếu đang ở bên trái, chuyển sang bên phải
                 rectang8.style.left = '4px';
-                track.style.backgroundColor = '#ccc'; // Màu khi ở bên trái
+                track.style.backgroundColor = '#ccc';
             } else {
-                // Nếu đang ở bên phải, chuyển sang bên trái
                 rectang8.style.left = '28px';
-                track.style.backgroundColor = '#A10550'; // Màu khi ở bên phải (màu xanh)
+                track.style.backgroundColor = '#A10550';
             }
         }
 
@@ -310,18 +306,14 @@
         const filter1 = document.querySelector('.filter1');
 
         arrow.addEventListener('click', () => {
-            // Toggle class "open" khi nhấn vào mũi tên
             arrow.classList.toggle('open');
 
-            // Kiểm tra nếu mũi tên là màu đỏ hoặc màu đen
             if (arrow.classList.contains('open')) {
-                // Mũi tên chuyển thành màu đen, hiển thị frame_26085806
                 frame.style.display = 'flex';
-                filter1.style.height = '394px';  /* Mở rộng filter1 khi frame hiển thị */
+                filter1.style.height = '394px';
             } else {
-                // Mũi tên trở lại màu đỏ, ẩn frame_26085806
                 frame.style.display = 'none';
-                filter1.style.height = '56px';  /* Thu nhỏ filter1 khi frame ẩn */
+                filter1.style.height = '56px';
             }
         });
         

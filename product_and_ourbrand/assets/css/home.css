@@ -240,6 +240,26 @@ a {
 
 }
 
+.text_hero {
+    position: absolute;
+    width: 572px;
+    height: 62px;
+    top: 403px;
+    left: 434px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 61.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    z-index: 3;
+   
+}
+
 .button {
     position: absolute;
     width: 184px;
@@ -252,6 +272,23 @@ a {
     opacity: 0px;
     border: 2px solid #FFFFFF;
     z-index: 3;
+    display: flex;
+}
+
+.text_button {
+    width: 86px;
+    height: 29px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+       
 }
 
 .school1 {
@@ -492,6 +529,13 @@ a {
     gap: 8px;
     border: 0px 0px 1px 0px;
     opacity: 0px;
+}
+
+.inf_title::placeholder {
+    color: gray;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 1;
 }
 
 .info2 {

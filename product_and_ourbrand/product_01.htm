@@ -304,6 +304,7 @@
         const arrow = document.querySelector('.arrow_5796');
         const frame = document.querySelector('.frame_26085806');
         const filter1 = document.querySelector('.filter1');
+        const textCategory = document.querySelector('.text_5796');
 
         arrow.addEventListener('click', () => {
             arrow.classList.toggle('open');
@@ -311,11 +312,30 @@
             if (arrow.classList.contains('open')) {
                 frame.style.display = 'flex';
                 filter1.style.height = '394px';
+                textCategory.style.color = '#A10550'; // Thay đổi màu chữ
             } else {
                 frame.style.display = 'none';
                 filter1.style.height = '56px';
+                textCategory.style.color = '#0C0C0C'; // Khôi phục màu chữ ban đầu
             }
         });
+
+        const arrowDropDown = document.querySelector('.arrow_drop_down');
+        const sortSubMenu = document.querySelector('.sort_sub_menu');
+        
+        arrowDropDown.addEventListener('click', () => {
+            // Kiểm tra và thay đổi trạng thái hiển thị của thẻ div
+            if (sortSubMenu.style.display === 'block') {
+                sortSubMenu.style.display = 'none';
+            } else {
+                sortSubMenu.style.display = 'block';
+                sortSubMenu.style.width = '288px';
+                sortSubMenu.style.height = '300px';
+                sortSubMenu.style.backgroundColor = '#ccc';
+                sortSubMenu.style.border = '1px solid #DFDFDF';
+            }
+        });
+        
         
     </script>
 

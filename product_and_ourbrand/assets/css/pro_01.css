@@ -631,6 +631,7 @@ a {
     opacity: 0px;
     background-color: #FFFFFF;
     border: 1px solid #DFDFDF;
+    z-index: 4;
 }
 
 .frame_26085787 {
@@ -691,7 +692,7 @@ a {
     border-right: 5px solid transparent;
     border-top: 5px solid #0C0C0C;
     background-color: transparent;
-    opacity: 1px;
+    opacity: opx;
 }
 
 .sort_sub_menu {
